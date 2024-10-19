@@ -12,11 +12,8 @@ public class Exercise1 {
 
         for (int i = 0; i < 2; i++){
             handler.handle(dino);
-            if (dino.getWakeStatus())
-                status = dino.getName() + " is awake!";
-            else
-                status = dino.getName() + " is asleep";
-            System.out.println(status);
+            status = dino.getWakeStatus() ? " is awake!" : " is asleep";
+            System.out.println(dino.getName() + status);
         }
 
     }
