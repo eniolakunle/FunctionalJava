@@ -8,10 +8,10 @@ public class Exercise1 {
         // Exercise 1:
         Dinosaur dino = new Dinosaur("Triceratops", 500);
         DinosaurHandler handler = d -> d.setWakeStatus( !d.getWakeStatus() );
+        String status;
 
         for (int i = 0; i < 2; i++){
             handler.handle(dino);
-            String status;
             if (dino.getWakeStatus())
                 status = dino.getName() + " is awake!";
             else
