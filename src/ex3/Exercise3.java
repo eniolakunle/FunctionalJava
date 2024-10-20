@@ -11,7 +11,7 @@ public class Exercise3 {
         int dinoCount = 0;
         // variable must be final or effectively final (not allowed to change), this does not compile.
         Consumer<List<Dinosaur>> increaseDino = list -> {
-            list.add(new Dinosaur("Dino" + dinoCount));
+            list.add(new Dinosaur("Dino" + dinoCount, 45));
             dinoCount++;
         };
     }
