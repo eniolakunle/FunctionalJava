@@ -1,4 +1,4 @@
-# Exercise 2 
+# Exercise 2 🐑
 ___
 Lambda expressions are extremely useful with the java.util.function interfaces. Let’s
 use them to manage dinosaurs:
