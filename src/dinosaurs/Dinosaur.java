@@ -1,13 +1,17 @@
 package dinosaurs;
 
 
-public class Dinosaur {
+public class Dinosaur implements Comparable<Dinosaur>{
     private double weight;
     private final String name;
     private int health = 100;
     private boolean isAwake;
     private DinosaurType dinoType;
 
+    @Override
+    public int compareTo(Dinosaur otherDino){
+        return name.compareTo(otherDino.getName());
+    }
     public Dinosaur(String name, double weight) {
         this.name = name;
         this.weight = weight;
