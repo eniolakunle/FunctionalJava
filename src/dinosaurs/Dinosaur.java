@@ -12,6 +12,7 @@ public class Dinosaur implements Comparable<Dinosaur>{
     public int compareTo(Dinosaur otherDino){
         return name.compareTo(otherDino.getName());
     }
+
     public Dinosaur(String name, double weight) {
         this.name = name;
         this.weight = weight;
